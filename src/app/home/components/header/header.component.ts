@@ -4,11 +4,11 @@ import { faSearch, faUserCircle, faHeart, faShoppingCart } from '@fortawesome/fr
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
   faSearch = faSearch;
   faUserCircle = faUserCircle;
-  faHeart= faHeart;
-  faShoppingCart= faShoppingCart;
+  faHeart = faHeart;
+  faShoppingCart = faShoppingCart;
 }

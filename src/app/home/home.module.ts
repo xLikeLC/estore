@@ -1,18 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {HeaderComponent} from "./components/header/header.component";
-import {CatnavigationComponent} from "./components/catnavigation/catnavigation.component";
-import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
-import {HomeComponent} from "./home.component";
-
+import { HomeComponent } from './home.component';
+import { HeaderComponent } from './components/header/header.component';
+import { CatnavigationComponent } from './components/catnavigation/catnavigation.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SidenavigationComponent } from './components/sidenavigation/sidenavigation.component';
 
 
 
 @NgModule({
-  declarations: [HeaderComponent,CatnavigationComponent, HomeComponent],
-  imports: [
-    CommonModule,
-    FontAwesomeModule
-  ]
+  declarations: [HomeComponent, HeaderComponent, CatnavigationComponent, SidenavigationComponent],
+  imports: [CommonModule,
+    FontAwesomeModule],
 })
-export class HomeModule { }
+export class HomeModule {}
