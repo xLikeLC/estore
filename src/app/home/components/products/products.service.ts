@@ -1,14 +1,10 @@
 import { Injectable } from '@angular/core';
-import {ProductListItem} from "./products.type";
-import {products} from "./product.data";
+import { ProductListItem } from './products.type';
+import { products } from './products.data';
 
-@Injectable(
-)
+@Injectable()
 export class ProductsService {
-
-  constructor() { }
-
-  getProductList(): ProductListItem[] {
-    return products
+  getProductsList(): ProductListItem[] {
+    return products;
   }
 }
