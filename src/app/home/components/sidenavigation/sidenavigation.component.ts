@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CategoryService } from '../../services/category.service';
 import { Category } from '../../types/category.type';
+import {categories} from "../../sampleData/categories.data";
 
 @Component({
   selector: 'app-sidenavigation',
@@ -10,12 +11,15 @@ import { Category } from '../../types/category.type';
 export class SidenavigationComponent {
   categories: Category[] = [];
   constructor(categoryService: CategoryService) {
-    this.categories = categoryService.getAllCategories();
+    categoryService.getAllCategories().subscribe((categories) => {
+      this.categories = categories;
+    })
   }
 
   getCategories(parentCategoryId?: number): Category[] {
     return this.categories.filter(
-      (category) => category.parent_category_id === parentCategoryId
+      (category) => parentCategoryId ? category.parent_categort_id === parentCategoryId :
+        category.parent_categort_id === null
     );
   }
 }
