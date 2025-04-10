@@ -6,9 +6,10 @@
 
     <div class="p-0 my-4 w-50 h-25 bg-white">
       <select class="dropdown p-0 m-0">
-        <option *ngFor="let category of categoryStore.topLevelCategories$ | async">
-          {{category.category}}
-        </option>
+        <option 
+        *ngFor="let category of categoryStore.topLevelCategories$ | async">
+     {{ category.category }}
+    </option>
       </select>
       <input class="form-control search-box" placeholder="Search..." />
       <button class="search-button">

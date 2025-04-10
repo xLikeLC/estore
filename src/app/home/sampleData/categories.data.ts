@@ -16,21 +16,21 @@ export const categories: Category[] = [
   {
     id: 4,
     category: 'Casual Wear',
-    parent_categort_id: 1
+    parent_category_id: 1
   },
   {
     id: 5,
     category: 'Party Wear',
-    parent_categort_id: 2
+    parent_category_id: 2
   },
   {
     id: 6,
     category: 'Foot Wear',
-    parent_categort_id: 2
+    parent_category_id: 2
   },
   {
     id: 7,
     category: 'Accessories',
-    parent_categort_id: 3
+    parent_category_id: 3
   }
 ];
