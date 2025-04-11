@@ -10,13 +10,17 @@ export class ProductsStoreItem extends StoreItem<Product[]> {
     super([]);
   }
 
-  async loadProducts() {
-    this.productsService.getAllProducts().subscribe((products) => {
+  async loadProducts(query?: string) {
+    this.productsService.getAllProducts(query).subscribe((products) => {
       this.setValue(products);
     });
   }
 
   get products$(): Observable<Product[]> {
     return this.value$;
+  }
+
+  get products(): Product [] {
+    return this.value;
   }
 }
