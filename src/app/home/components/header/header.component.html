@@ -5,6 +5,7 @@
     </div>
 
     <div class="p-0 my-4 w-50 h-25 bg-white">
+      <ng-container *ngIf="displaySearch">
       <select #categoryOptions class="dropdown p-0 m-0">
         <option
         *ngFor="let category of categoryStore.topLevelCategories$ | async"
@@ -19,6 +20,7 @@
       >
         <fa-icon [icon]="faSearch"></fa-icon>
       </button>
+      </ng-container>
     </div>
 
     <div class="login-container p-0">

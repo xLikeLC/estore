@@ -15,6 +15,7 @@ import { ProductsStoreItem } from './services/product/products.storeItem';
 import {RouterModule} from "@angular/router";
 import {HomeRoutingModule} from "./home-routing.module";
 import { ProductGalleryComponent } from './components/product-gallery/product-gallery.component';
+import { ProductdetailsComponent } from './components/productdetails/productdetails.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ProductGalleryComponent } from './components/product-gallery/product-ga
     SidenavigationComponent,
     ProductsComponent,
     ProductGalleryComponent,
+    ProductdetailsComponent,
   ],
   imports: [CommonModule, FontAwesomeModule, SharedModule, HttpClientModule,RouterModule,HomeRoutingModule],
   providers: [
