@@ -16,6 +16,7 @@ import {RouterModule} from "@angular/router";
 import {HomeRoutingModule} from "./home-routing.module";
 import { ProductGalleryComponent } from './components/product-gallery/product-gallery.component';
 import { ProductdetailsComponent } from './components/productdetails/productdetails.component';
+import {CartStoreItem} from "./services/cart/cart.storeItem";
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { ProductdetailsComponent } from './components/productdetails/productdeta
     CategoriesStoreItem,
     ProductsService,
     ProductsStoreItem,
+    CartStoreItem
   ],
 })
 export class HomeModule {}
