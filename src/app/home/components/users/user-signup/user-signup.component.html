@@ -117,13 +117,9 @@
       >
         Confirm Password is required
       </span>
-
-      <span
-        class="text-danger"
-        *ngIf="confirmPassword?.touched && userSignupForm.errors?.['passwordMismatch']"
-      >
-        Passwords doesn't match
-      </span>
+     <span class="text-danger" *ngIf="confirmPassword?.touched && userSignupForm.errors?.['passwordMismatch']">
+      Password don't match
+     </span>
     </div>
     <div class="text-center form-group-margin">
       <button
