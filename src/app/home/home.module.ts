@@ -18,6 +18,8 @@ import { ProductGalleryComponent } from './components/product-gallery/product-ga
 import { ProductdetailsComponent } from './components/productdetails/productdetails.component';
 import {CartStoreItem} from "./services/cart/cart.storeItem";
 import { CartComponent } from './components/cart/cart.component';
+import { UserSignupComponent } from './components/users/user-signup/user-signup.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -29,8 +31,9 @@ import { CartComponent } from './components/cart/cart.component';
     ProductGalleryComponent,
     ProductdetailsComponent,
     CartComponent,
+    UserSignupComponent,
   ],
-  imports: [CommonModule, FontAwesomeModule, SharedModule, HttpClientModule,RouterModule,HomeRoutingModule],
+  imports: [CommonModule, FontAwesomeModule, SharedModule, HttpClientModule,RouterModule,HomeRoutingModule,ReactiveFormsModule],
   providers: [
     CategoryService,
     CategoriesStoreItem,
